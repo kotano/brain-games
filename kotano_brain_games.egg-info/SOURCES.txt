@@ -2,8 +2,10 @@ README.md
 setup.py
 brain_games/__init__.py
 brain_games/cli.py
+brain_games/game.py
 brain_games/scripts/__init__.py
-brain_games/scripts/brain_games.py
+brain_games/scripts/brain_even.py
+brain_games/scripts/brain_game.py
 kotano_brain_games.egg-info/PKG-INFO
 kotano_brain_games.egg-info/SOURCES.txt
 kotano_brain_games.egg-info/dependency_links.txt

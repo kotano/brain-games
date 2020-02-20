@@ -1,14 +1,15 @@
 [tool.poetry]
 name = "kotano_brain_games"
-version = "0.2.0"
-description = "Hexlet python project called"
+version = "0.3.0"
+description = "Hexlet python project called 'Brain Games'"
 authors = ["kotano"]
 packages = [
     { include = "brain_games" },
 ]
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.brain_game:main"
+brain-even = "brain_games.scripts.brain_even:main"
 
 [tool.poetry.dependencies]
 python = "^3.6.9"
