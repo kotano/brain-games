@@ -2,21 +2,24 @@ from brain_games.cli import welcome_user
 import prompt
 
 
-def engine(module, diffic=False):
+def engine(module, difficulty=False):
+    '''Main algorithm for building games. Takes as a required argument module
+     with function named generate, use second argument to enable difficulty
+     setting'''
     correct_answers_count = 0
     max_correct_answers = 3
     print('Welcome to the Brain Games! ')
     print(module.RULE, end='\n\n')
     name = welcome_user()
 
-    if diffic is True:
-        difficulty = input(
+    if difficulty is True:
+        diffic = input(
             'Please, select difficulty [easy, normal, hard, infinite]: ')
-        if difficulty == 'normal':
+        if diffic == 'normal':
             max_correct_answers = 5
-        elif difficulty == 'hard':
+        elif diffic == 'hard':
             max_correct_answers = 15
-        elif difficulty == 'infinite':
+        elif diffic == 'infinite':
             max_correct_answers = 1000
 
     while correct_answers_count < max_correct_answers:
