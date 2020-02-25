@@ -3,8 +3,8 @@ name = "kotano_brain_games"
 version = "0.7.0"
 description = "Hexlet python project called 'Brain Games'"
 authors = ["kotano <kot4no@gmail.com>"]
-readme = README.md
-repository = https://github/kotano/python-project-lvl1
+readme = "README.md"
+repository = "https://github/kotano/python-project-lvl1"
 classifiers = [
     "Topic :: Games/Entertainment",
     "Development Status :: 3 - Alpha",
