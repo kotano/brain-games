@@ -7,3 +7,6 @@ publish_test:
 
 lint:
 	poetry run flake8 brain_games
+
+install_from_pip:
+	pip install -i https://test.pypi.org/simple --extra-index-url https://pypi.org/simple kotano-brain-games --upgrade

@@ -82,6 +82,8 @@ class Calculator(Game):
                             name=self.name))
 
                 else:
+                    print("'{}' is wrong answer ;(."
+                    "Correct answer was '{}' ".format(answer, expr))  # noqa
                     print('Let\'s try again ' + self.name + '!')
             except ValueError:
                 print("Enter a number")

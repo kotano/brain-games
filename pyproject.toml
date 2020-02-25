@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kotano_brain_games"
-version = "0.3.0"
+version = "0.4.1"
 description = "Hexlet python project called 'Brain Games'"
 authors = ["kotano"]
 packages = [

@@ -7,3 +7,4 @@ Hi
 [![Build Status](https://travis-ci.org/kotano/python-project-lvl1.svg?branch=master)](https://travis-ci.org/kotano/python-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/iAgLlfE7CZ3pYVpFCRm0qywG5.svg)](https://asciinema.org/a/iAgLlfE7CZ3pYVpFCRm0qywG5)
+[![asciicast](https://asciinema.org/a/KLlOMWIYpxohcGFNDLS0PlHTv.svg)](https://asciinema.org/a/KLlOMWIYpxohcGFNDLS0PlHTv)
