@@ -1,2 +1,5 @@
 .gitconfig
 .viminfo
+.cache
+.config
+.vscode
