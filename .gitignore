@@ -3,6 +3,6 @@
 .cache
 .config
 .vscode
-brain_games/games/.game.py
 __pycache__
 dist
+kotano_brain_games.egg-info
