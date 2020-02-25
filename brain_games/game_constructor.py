@@ -36,6 +36,7 @@ class Game(object):
 class EvenGame(Game):
     def __init__(self, rule=''):
         super().__init__(rule=rule)
+        self.rule = 'Answer "yes" if number even otherwise answer "no".\n'
 
     def start(self):
         while self.correct_answers_count < self.max_correct_answers:
@@ -43,7 +44,8 @@ class EvenGame(Game):
             print('\nQuestion: ' + str(number))
             answer = prompt.string('Your answer: ')
 
-            if (answer.lower() == 'yes' and number % 2 == 0) or answer.lower() == 'no' and number % 2 != 0:  # noqa E501
+            if (answer.lower() == 'yes' and number % 2 == 0) or (
+                    answer.lower() == 'no' and number % 2 != 0):
                 print('Correct!')
                 self.correct_answers_count += 1
                 if self.correct_answers_count == self.max_correct_answers:
@@ -59,20 +61,21 @@ class EvenGame(Game):
 class Calculator(Game):
     def __init__(self, rule=''):
         super().__init__(rule=rule)
+        self.rule = 'What is the result of the expression?\n '
 
     def start(self):
-        operators = [(mul, '*'), (add, '+'), (sub, '-')]
+        OPERATORS = [(mul, '*'), (add, '+'), (sub, '-')]
         while self.correct_answers_count < self.max_correct_answers:
             num1 = random.randint(1, 10)
             num2 = random.randint(1, 10)
-            chose = random.choice(operators)
+            chose = random.choice(OPERATORS)
             expr = chose[0](num1, num2)
-            print('Question: {} {} {}'.format(num1, chose[1], num2))
+            print('\nQuestion: {} {} {}'.format(num1, chose[1], num2))
             answer = prompt.string('Your answer: ')
 
             try:
-                if answer == 'q':   # why if i add `or exit` condition
-                    break           # program stops after first input?
+                if answer == 'q':
+                    break
 
                 elif int(answer) == expr:
                     print('Correct!')
@@ -90,6 +93,5 @@ class Calculator(Game):
 
 
 if __name__ == "__main__":
-    phrase = 'What is the result of the expression?\n '
-    calc = Calculator(phrase)
+    calc = Calculator()
     calc.start()
