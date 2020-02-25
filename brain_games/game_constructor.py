@@ -40,7 +40,7 @@ class EvenGame(Game):
     def start(self):
         while self.correct_answers_count < self.max_correct_answers:
             number = random.randint(1, 10000)
-            print('Question: ' + str(number))
+            print('\nQuestion: ' + str(number))
             answer = prompt.string('Your answer: ')
 
             if (answer.lower() == 'yes' and number % 2 == 0) or answer.lower() == 'no' and number % 2 != 0:  # noqa E501
@@ -71,8 +71,8 @@ class Calculator(Game):
             answer = prompt.string('Your answer: ')
 
             try:
-                if answer == 'q':
-                    break
+                if answer == 'q':   # why if i add `or exit` condition
+                    break           # program stops after first input?
 
                 elif int(answer) == expr:
                     print('Correct!')
