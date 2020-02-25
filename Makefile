@@ -10,3 +10,7 @@ lint:
 
 install_from_pip:
 	pip install -i https://test.pypi.org/simple --extra-index-url https://pypi.org/simple kotano-brain-games --upgrade
+
+uninstall:
+	pip uninstall kotano-brain-games
+	pip uninstall prompt
