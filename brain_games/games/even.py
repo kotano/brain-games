@@ -5,6 +5,7 @@ from brain_games.game_engine import engine
 
 RULE = 'Answer "yes" if number even otherwise answer "no".'
 
+
 def generate():
     number = random.randint(1, 10000)
     questn = str(number)
