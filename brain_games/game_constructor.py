@@ -11,12 +11,26 @@ class Game(object):
         print(self.rule)
         return welcome_user()
 
+    def select_difficulty(self):
+        '''Made to set difficulty of game by increasing number of
+        correct answers to win #to_be_improved'''
+
+        self.difficulty = input(
+            'Please, select difficulty [easy, normal, hard, infinite]: ')
+        if self.difficulty == 'normal':
+            self.max_correct_answers = 5
+        elif self.difficulty == 'hard':
+            self.max_correct_answers = 15
+        elif self.difficulty == 'infinite':
+            self.max_correct_answers = 1000
+
     def __init__(self, rule=''):
         self.rule = rule
         self.correct_answers_count = 0
         self.max_correct_answers = 3
-
         self.name = self.welcome()
+        self.difficulty = 'easy'
+        self.select_difficulty()
 
 
 class EvenGame(Game):
