@@ -6,6 +6,7 @@ def engine(module, difficulty=False):
     '''Main algorithm for building games. Takes as a required argument module
      with function named generate, use second argument to enable difficulty
      setting'''
+
     correct_answers_count = 0
     max_correct_answers = 3
     print('Welcome to the Brain Games! ')

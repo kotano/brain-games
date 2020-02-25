@@ -2,7 +2,13 @@
 name = "kotano_brain_games"
 version = "0.7.0"
 description = "Hexlet python project called 'Brain Games'"
-authors = ["kotano"]
+authors = ["kotano <kot4no@gmail.com>"]
+readme = README.md
+repository = https://github/kotano/python-project-lvl1
+classifiers = [
+    "Topic :: Games/Entertainment",
+    "Development Status :: 3 - Alpha",
+]
 packages = [
     { include = "brain_games" },
 ]
@@ -14,6 +20,10 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
+
+[[tool.poetry.source]]
+name = "test_pypi"
+url = "https://test.pypi.org/simple"
 
 [tool.poetry.dependencies]
 python = "^3.6.9"
