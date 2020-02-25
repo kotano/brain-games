@@ -25,7 +25,7 @@ def engine(module, difficulty=False):
     while correct_answers_count < max_correct_answers:
         question, correct_answer = module.generate()
         correct_answer = str(correct_answer)
-        print('\nQuestion: ' + question)
+        print('\nQuestion: ' + str(question))
         answer = prompt.string('Your answer: ')
         try:
             if answer == 'q' or answer == 'exit':

@@ -20,3 +20,6 @@ Hi
 
 # brain-progression
 [![asciicast](https://asciinema.org/a/W8By0aHAEu95uou2CRnDGWnLL.svg)](https://asciinema.org/a/W8By0aHAEu95uou2CRnDGWnLL)
+
+# brain-prime
+[![asciicast](https://asciinema.org/a/It5rtZMu31zFFjO8HFkiVxMXJ.svg)](https://asciinema.org/a/It5rtZMu31zFFjO8HFkiVxMXJ)
