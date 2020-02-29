@@ -1,10 +1,10 @@
 import json
-from os.path import dirname, join
+from os.path import join
 
 import prompt
 
 
-FILENAME = join('/','tmp', 'user.json')    # windows?
+FILENAME = join('/', 'tmp', 'user.json')    # windows?
 
 
 def welcome_user():
