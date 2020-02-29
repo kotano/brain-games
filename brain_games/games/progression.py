@@ -9,6 +9,7 @@ def generate():
     end = start + step * 10
     progression = list(range(start, end, step))
     x = random.choice(progression)
-    res = ' '.join([str(e) for e in progression])
-    res = res.replace(str(x), '...')
-    return res, x
+    # res = ' '.join([str(e) for e in progression])
+    # res = res.replace(str(x), '...')
+    res = ' '.join(str(e) if e != x else '...' for e in progression)
+    return res, str(x)

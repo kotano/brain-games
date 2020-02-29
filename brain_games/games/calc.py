@@ -9,8 +9,8 @@ OPERATORS = [(mul, '*'), (add, '+'), (sub, '-')]
 def generate():
     num1 = random.randint(1, 10)
     num2 = random.randint(1, 10)
-    chose = random.choice(OPERATORS)
-    correct_answer = chose[0](num1, num2)
-    questn = '{} {} {}'.format(num1, chose[1], num2)
+    operation, sign = random.choice(OPERATORS)
+    correct_answer = operation(num1, num2)
+    questn = '{} {} {}'.format(num1, sign, num2)
 
-    return questn, correct_answer
+    return questn, str(correct_answer)

@@ -1,5 +1,5 @@
-from math import gcd
-from random import randint
+from math import gcd         # мне немного лень простите,
+from random import randint    # потом как нибудь в свободное время потренируюсь
 
 
 RULE = 'Find the greatest common divisor of given numbers. '

@@ -9,6 +9,6 @@ def generate():
     questn = str(number)
     if number % 2 == 0:
         correct_answer = 'yes'
-    elif number % 2 != 0:
+    else:
         correct_answer = 'no'
     return questn, correct_answer
