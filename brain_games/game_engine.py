@@ -36,6 +36,7 @@ def engine(game_module, rounds=None):
         answer = prompt.string('Your answer: ')
 
         if answer == 'q' or answer == 'exit':
+            print('Goodbye, {} ;('.format(name))
             break
 
         elif answer == correct_answer:

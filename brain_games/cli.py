@@ -4,7 +4,7 @@ from os.path import dirname, join
 import prompt
 
 
-FILENAME = join(dirname(__file__), 'usr', 'user.json')
+FILENAME = join('/','tmp', 'user.json')    # windows?
 
 
 def welcome_user():
