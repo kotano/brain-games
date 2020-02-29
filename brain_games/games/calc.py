@@ -1,7 +1,6 @@
 import random
-from operator import mul, add, sub
+from operator import add, mul, sub
 
-from brain_games.game_engine import engine
 
 RULE = 'What is the result of the expression? '
 OPERATORS = [(mul, '*'), (add, '+'), (sub, '-')]
@@ -15,8 +14,3 @@ def generate():
     questn = '{} {} {}'.format(num1, chose[1], num2)
 
     return questn, correct_answer
-
-
-if __name__ == "__main__":
-    from brain_games.games import calc
-    engine(calc, True)

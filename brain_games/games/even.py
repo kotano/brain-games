@@ -1,7 +1,5 @@
 import random
 
-from brain_games.game_engine import engine
-
 
 RULE = 'Answer "yes" if number even otherwise answer "no".'
 
@@ -14,8 +12,3 @@ def generate():
     elif number % 2 != 0:
         correct_answer = 'no'
     return questn, correct_answer
-
-
-if __name__ == "__main__":
-    from brain_games.games import even
-    engine(even, True)
