@@ -11,7 +11,7 @@ def engine(game_module, rounds=None):
      setting'''
 
     correct_answers_count = 0
-    print('Welcome to the Brain Games! ')
+    print('\nWelcome to the Brain Games! ')
     print(game_module.RULE, end='\n\n')
     name = welcome_user()
 
